@@ -1,4 +1,5 @@
 // Java code for thread creation by implementing 
+
 // the Runnable Interface 
 class MultithreadingDemo implements Runnable 
 { 
@@ -30,6 +31,7 @@ class MultithreadingDemo implements Runnable
     } 
 } 
   
+
 // Main Class 
 class threadA
 { 
