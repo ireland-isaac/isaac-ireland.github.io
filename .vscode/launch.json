@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AppControlDemo",
+            "request": "launch",
+            "mainClass": "AppControlDemo"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Multithreadex2",
             "request": "launch",
             "cwd": "${workspaceFolder}",
