@@ -4,7 +4,7 @@
 package appcontroldemo;
 
 public class SpectreReview {
-    public void show()
+    public void review()
     {
         System.out.println("007 movie right?"
         + "Bond, James Bond! "

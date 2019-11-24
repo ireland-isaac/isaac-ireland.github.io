@@ -4,7 +4,7 @@
 package appcontroldemo;
 
 public class PeanutsReview {
-    public void show()
+    public void review()
     {
         System.out.println("Charlie Brown,"
         + "Snoopy, "

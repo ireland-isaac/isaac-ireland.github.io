@@ -26,7 +26,7 @@ public class Dispatcher
 			throw new Exception("There is no command with the key word '" + commandKey + "'.");
 		}
 		
-		return command.handleIt(commandData);
+		return command.review(commandData);
 	}
 
     public void dispatch( String request)

@@ -5,6 +5,10 @@ package appcontroldemo;
 
 /** original work by chistianray */
 
+import java.util.HashMap;
+
+import main.handlers.*;
+
 public class AppController
 {
 private Dispatcher dispatcher;
