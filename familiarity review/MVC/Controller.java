@@ -17,13 +17,8 @@ class Controller implements java.awt.event.ActionListener {
 
 	//invoked when a button is pressed
 	public void actionPerformed(java.awt.event.ActionEvent e){
-		//uncomment to see what action happened at view
-		/*
-		System.out.println ("Controller: The " + e.getActionCommand() 
-			+ " button is clicked at " + new java.util.Date(e.getWhen())
-			+ " with e.paramString " + e.paramString() );
-		*/
-		System.out.println("Controller: acting on Model");
+
+		// System.out.println("Controller: acting on Model");
 		model.incrementValue();
 	} //actionPerformed()
 

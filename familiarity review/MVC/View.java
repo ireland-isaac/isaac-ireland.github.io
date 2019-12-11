@@ -7,7 +7,7 @@
 
 import java.awt.Button;
 import java.awt.Panel;
-import java.awt.Frame;
+import java.awt.Frame; 
 import java.awt.TextField;
 import java.awt.Label;
 import java.awt.event.WindowEvent;	//for CloseListener()
@@ -29,7 +29,7 @@ class View implements java.util.Observer {
 		
 		//frame in constructor and not an attribute as doesn't need to be visible to whole class
 		Frame frame 		= new Frame("simple MVC");
-		frame.add("North", new Label("counter"));
+		frame.add("North", new Label("broken counter"));
 
 		myTextField 		= new TextField();
 		frame.add("Center", myTextField);
@@ -50,16 +50,7 @@ class View implements java.util.Observer {
 	// Called from the Model
     	public void update(Observable obs, Object obj) {
 
-		//who called us and what did they send?
-		//System.out.println ("View      : Observable is " + obs.getClass() + ", object passed is " + obj.getClass());
 
-		//model Pull 
-		//ignore obj and ask model for value, 
-		//to do this, the view has to know about the model (which I decided I didn't want to do)
-		//uncomment next line to do Model Pull
-    		//myTextField.setText("" + model.getValue());
-
-		//model Push 
 		//parse obj
 		myTextField.setText("" + ((Integer)obj).intValue());	//obj is an Object, need to cast to an Integer
 
@@ -75,11 +66,7 @@ class View implements java.util.Observer {
 		button.addActionListener(controller);	//need controller before adding it as a listener 
 	} //addController()
 
-	//uncomment to allow controller to use view to initialise model	
-	//public void addModel(Model m){
-	//	System.out.println("View      : adding model");
-	//	this.model = m;
-	//} //addModel()
+
 	
 	public static class CloseListener extends WindowAdapter {
 		public void windowClosing(WindowEvent e) {
