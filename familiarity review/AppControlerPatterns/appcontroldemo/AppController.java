@@ -1,13 +1,13 @@
 /** original work by chistianray */
 
 
-package appcontroldemo;
+package AppControlDemo;
 
 /** original work by chistianray */
 
 import java.util.HashMap;
 
-import main.handlers.*;
+// import AppControlDemo.*;
 
 public class AppController
 {

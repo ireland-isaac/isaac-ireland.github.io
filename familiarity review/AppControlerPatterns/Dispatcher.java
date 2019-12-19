@@ -1,6 +1,6 @@
 /** original work by chistianray */
 
-package appcontroldemo;
+package AppControlDemo;
 import java.util.HashMap;
 
 public class Dispatcher
@@ -26,7 +26,7 @@ public class Dispatcher
 			throw new Exception("There is no command with the key word '" + commandKey + "'.");
 		}
 		
-		return command.review(commandData);
+		return command.handleIt(commandData);
 	}
 
     public void dispatch( String request)

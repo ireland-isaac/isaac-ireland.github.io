@@ -1,10 +1,10 @@
 /** original work by DBanks */
 
 
-package appcontroldemo;
+package AppControlDemo;
 
 public class SpectreReview {
-    public void review()
+    public Object review()
     {
         System.out.println("007 movie right?"
         + "Bond, James Bond! "

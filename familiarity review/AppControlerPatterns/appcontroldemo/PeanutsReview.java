@@ -1,10 +1,11 @@
 /** original work by DBanks */
 
 
-package appcontroldemo;
+package AppControlDemo;
+
 
 public class PeanutsReview {
-    public void review()
+    public Object review()
     {
         System.out.println("Charlie Brown,"
         + "Snoopy, "

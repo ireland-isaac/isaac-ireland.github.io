@@ -1,4 +1,4 @@
-package appcontroldemo;
+package AppControlDemo;
 
 import java.util.Scanner;
 
