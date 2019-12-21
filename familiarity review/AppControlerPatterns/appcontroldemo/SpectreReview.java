@@ -3,11 +3,14 @@
 
 package AppControlDemo;
 
-public class SpectreReview {
+public class SpectreReview implements Handler{
+    
     public Object review()
     {
         System.out.println("007 movie right?"
         + "Bond, James Bond! "
         + "The end");
+
+        return true;
     }
 }

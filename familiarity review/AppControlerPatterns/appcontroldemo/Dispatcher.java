@@ -19,7 +19,7 @@ public class Dispatcher  {
 
     }
 
-    public Object doCommand(String commandKey, HashMap<String, String> commandData) throws Exception {
+    public Object doCommand(String commandKey, HashMap<String, Object> commandData) throws Exception {
 		Handler command = commands.getOrDefault(commandKey, null);
 		if (command == null) {
 			throw new Exception("There is no command with the key word '" + commandKey + "'.");
@@ -31,7 +31,7 @@ public class Dispatcher  {
     public void dispatch( String request)
     {
   
-            request.review();
+            command.review();
 
     }
 

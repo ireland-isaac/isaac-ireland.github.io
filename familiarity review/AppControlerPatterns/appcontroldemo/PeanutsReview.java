@@ -4,11 +4,15 @@
 package AppControlDemo;
 
 
-public class PeanutsReview {
+public class PeanutsReview implements Handler{
+
+    
     public Object review()
     {
-        System.out.println("Charlie Brown,"
-        + "Snoopy, "
-        + "and Lucy, all doo stuff, the end");
+        System.out.println("Charlie Brown,");
+        System.out.println("Snoopy, ");
+        System.out.println("and Lucy, all doo stuff, the end");
+
+        return true;
     }
 }
