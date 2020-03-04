@@ -2,6 +2,7 @@ package AppControlDemo;
 
 import java.util.Scanner;
 
+
 /** original work by chistianray */
 
 public class AppControlDemo

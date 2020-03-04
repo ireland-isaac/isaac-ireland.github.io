@@ -7,7 +7,7 @@ package AppControlDemo;
 public class PeanutsReview implements Handler{
 
     
-    public Object review()
+    public Object review(HashMap<String, Object> data)
     {
         System.out.println("Charlie Brown,");
         System.out.println("Snoopy, ");
@@ -15,4 +15,4 @@ public class PeanutsReview implements Handler{
 
         return true;
     }
-}
+}4

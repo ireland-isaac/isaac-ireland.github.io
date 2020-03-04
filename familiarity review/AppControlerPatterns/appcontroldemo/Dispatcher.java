@@ -1,4 +1,5 @@
 /** original work by chistianray */
+// altered by Isaac Ireland
 
 package AppControlDemo;
 import java.util.HashMap;
@@ -6,11 +7,11 @@ import java.util.HashMap;
 public class Dispatcher  {
     private HashMap<String, Handler> commands;
 
-    private PeanutsReview Peanuts;
-    private CreedReview Creed;
-    private SpectreReview Spectre;
+    // private PeanutsReview Peanuts;
+    // private CreedReview Creed;
+    // private SpectreReview Spectre;
 
-    public Object Dispatcher()
+    public Dispatcher()
     {
         commands = new HashMap<String,Handler>();
 		commands.put("Peanuts", new PeanutsReview());
@@ -28,11 +29,9 @@ public class Dispatcher  {
 		return command.review(commandData);
 	}
 
-    public void dispatch( String request)
-    {
-  
-            command.review();
-
-    }
+    // public void dispatch( String request)
+    // {
+    //         command.review();
+    // }
 
 }
